@@ -17,8 +17,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-  flutter_gen: ^5.2.0
-  build_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -31,7 +29,7 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
   assets:
-    - assets/images/bank
+    - assets/images/bank/
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages

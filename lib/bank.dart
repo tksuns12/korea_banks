@@ -1,13 +1,13 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:korea_banks/gen/assets.gen.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Bank extends Equatable {
   final String koreanName;
   final String shortName;
   final String englishName;
   final String code;
-  final ImageProvider logo;
+  final Widget logo;
   const Bank({
     required this.koreanName,
     required this.englishName,
@@ -87,305 +87,452 @@ final bankProvider = [
       englishName: 'KYONGNAMBANK',
       shortName: '경남',
       code: '39',
-      logo: Assets.images.bank.kyongname.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/bnk.svg',
+        package: 'korea_banks',
+        width: 100,
+      )),
   Bank(
       koreanName: '광주은행',
       englishName: 'GWANGJUBANK',
       shortName: '광주',
       code: '34',
-      logo: Assets.images.bank.gwangju.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/jb.svg',
+        package: 'korea_banks',
+        width: 100,
+      )),
   Bank(
       koreanName: '교보증권',
       englishName: 'KYOBO_SECURITIES',
       shortName: '교보증권',
       code: 'S8',
-      logo: Assets.images.bank.kyobo.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/kyobo.svg',
+        package: 'korea_banks',
+        width: 100,
+      )),
   Bank(
       koreanName: '단위농협',
       englishName: 'LOCALNONGHYEOP',
       shortName: '단위농협',
       code: '12',
-      logo: Assets.images.bank.nonghyeop.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/nonghyeop.svg',
+        package: 'korea_banks',
+        width: 100,
+      )),
   Bank(
       koreanName: '대신증권',
       englishName: 'DAESHIN_SECURITIES',
       shortName: '대신증권',
       code: 'SE',
-      logo: Assets.images.bank.daeshin.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/daeshin.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '메리츠증권',
       englishName: 'MERITZ_SECURITIES',
       shortName: '메리츠증권',
       code: 'SK',
-      logo: Assets.images.bank.meritz.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/meritz.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '미래에셋증권',
       englishName: 'MIRAE_ASSET_SECURITIES',
       shortName: '미래에셋증권',
       code: 'S5',
-      logo: Assets.images.bank.mirae.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/mirae.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '부국증권',
       englishName: 'BOOKOOK_SECURITIES',
       shortName: '부국',
       code: 'SM',
-      logo: Assets.images.bank.bukuk.provider()),
+      logo: Image.asset(
+        'assets/images/bank/bukuk.png',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '부산은행',
       englishName: 'BUSANBANK',
       shortName: '부산',
       code: '32',
-      logo: Assets.images.bank.busan.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/bnk.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '삼성증권',
       englishName: 'SAMSUNG_SECURITIES',
       shortName: '삼성증권',
       code: 'S3',
-      logo: Assets.images.bank.samsung.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/samsung.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '새마을금고',
       englishName: 'SAEMAEUL',
       shortName: '새마을',
       code: '45',
-      logo: Assets.images.bank.saemaeul.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/saemaeul.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '산림조합',
       englishName: 'SANLIM',
       shortName: '산림',
       code: '64',
-      logo: Assets.images.bank.sanlim.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/sanlim.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '신영증권',
       englishName: 'SHINYOUNG_SECURITIES',
       shortName: '신영증권',
       code: 'SN',
-      logo: Assets.images.bank.shinyoung.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/shinyoung.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '신한금융투자',
       englishName: 'SHINHAN_INVESTMENT',
       shortName: '신한금융투자',
       code: 'S2',
-      logo: Assets.images.bank.shinhan.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/shinhan.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '신한은행',
       englishName: 'SHINHAN',
       shortName: '신한',
       code: '88',
-      logo: Assets.images.bank.shinhan.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/shinhan.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '신협',
       englishName: 'SHINHYEOP',
       shortName: '신협',
       code: '48',
-      logo: Assets.images.bank.shinhyeop.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/shinhyeop.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '씨티은행',
       englishName: 'CITI',
       shortName: '씨티',
       code: '27',
-      logo: Assets.images.bank.citi.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/citi.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '우리은행',
       englishName: 'WOORI',
       shortName: '우리',
       code: '20',
-      logo: Assets.images.bank.woori.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/woori.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '우체국예금보험',
       englishName: 'POST',
       shortName: '우체국',
       code: '71',
-      logo: Assets.images.bank.postoffice.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/postoffice.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '유안타증권',
       englishName: 'YUANTA_SECURITIES',
       shortName: '유안타증권',
       code: 'S0',
-      logo: Assets.images.bank.yuanta.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/yuanta.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '유진투자증권',
       englishName: 'EUGENE_INVESTMENT_AND_SECURITIES',
       shortName: '유진투자증권',
       code: 'SJ',
-      logo: Assets.images.bank.yujin.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/yujin.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '저축은행중앙회',
       englishName: 'SAVINGBANK',
       shortName: '저축',
       code: '50',
-      logo: Assets.images.bank.savingbank.provider()),
+      logo: Image.asset(
+        'assets/images/bank/savingbank.jpg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '전북은행',
       englishName: 'JEONBUKBANK',
       shortName: '전북',
       code: '37',
-      logo: Assets.images.bank.jeonbuk.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/jb.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '제주은행',
       englishName: 'JEJUBANK',
       shortName: '제주',
       code: '35',
-      logo: Assets.images.bank.jeju.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/shinhan.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '카카오뱅크',
       englishName: 'KAKAOBANK',
       shortName: '카카오',
       code: '90',
-      logo: Assets.images.bank.kakaobank.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/kakaobank.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '카카오페이증권',
       englishName: 'KAKAOPAY_SECURITIES',
       shortName: '카카오페이증권',
       code: 'SQ',
-      logo: Assets.images.bank.kakaopay.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/kakaopay.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '케이뱅크',
       englishName: 'KBANK',
       shortName: '케이',
       code: '89',
-      logo: Assets.images.bank.kbank.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/kbank.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '토스머니',
       englishName: 'TOSS_MONEY',
       shortName: '토스머니',
       code: '',
-      logo: Assets.images.bank.tosspayments.provider()),
+      logo: SvgPicture.asset('assets/images/bank/toss.svg',
+          package: 'korea_banks',width: 100,)),
   Bank(
       koreanName: '토스뱅크',
       englishName: 'TOSSBANK',
       shortName: '토스',
       code: '92',
-      logo: Assets.images.bank.tossbank.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/toss.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '토스증권',
       englishName: 'TOSS_SECURITIES',
       shortName: '토스증권',
       code: 'ST',
-      logo: Assets.images.bank.tosssecurities.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/toss.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '펀드온라인코리아',
       englishName: 'KOREA_FOSS_SECURITIES',
       shortName: '펀드온라인코리아',
       code: 'SR',
-      logo: Assets.images.bank.fundonline.provider()),
+      logo: Image.asset(
+        'assets/images/bank/fundonline.png',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '하나금융투자',
       englishName: 'HANA_INVESTMENT_AND_SECURITIES',
       shortName: '하나금융투자',
       code: 'SH',
-      logo: Assets.images.bank.hanaInverstment.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/hana.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '하나은행',
       englishName: 'HANA',
       shortName: '하나',
       code: '81',
-      logo: Assets.images.bank.hanabank.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/hana.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '하이투자증권',
       englishName: 'HI_INVESTMENT_AND_SECURITIES',
       shortName: '하이투자증권',
       code: 'S9',
-      logo: Assets.images.bank.hiInvestment.provider()),
+      logo: SvgPicture.asset('assets/images/bank/hi.svg',
+          package: 'korea_banks',width: 100,)),
   Bank(
       koreanName: '한국투자증권',
       englishName: 'KOREA_INVESTMENT_AND_SECURITIES',
       shortName: '한국투자증권',
       code: 'S6',
-      logo: Assets.images.bank.koreaInvestment.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/korea_investment.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '한화투자증권',
       englishName: 'HANHWA_INVESTMENT_AND_SECURITIES',
       shortName: '한화투자증권',
       code: 'SG',
-      logo: Assets.images.bank.hanhwa.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/hanhwa.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: '현대차증권',
       englishName: 'HYUNDAI_MOTOR_SECURITIES',
       shortName: '현대차증권',
       code: 'SA',
-      logo: Assets.images.bank.hyundaiMotors.provider()),
+      logo: SvgPicture.asset('assets/images/bank/hyundai_motors.svg',
+          package: 'korea_banks',width: 100,)),
   Bank(
       koreanName: '홍콩상하이은행',
       englishName: 'HSBC',
       shortName: '',
       code: '54',
-      logo: Assets.images.bank.hsbc.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/hsbc.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'DB금융투자',
       englishName: 'DB_INVESTMENT_AND_SECURITIES',
       shortName: 'DB금융투자',
       code: 'SI',
-      logo: Assets.images.bank.db.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/db.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'DGB대구은행',
       englishName: 'DAEGUBANK',
       shortName: '대구',
       code: '31',
-      logo: Assets.images.bank.daegu.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/dgb.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'IBK기업은행',
       englishName: 'IBK',
       shortName: '기업',
       code: '03',
-      logo: Assets.images.bank.ibk.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/ibk.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'KB국민은행',
       englishName: 'KOOKMIN',
       shortName: '국민',
       code: '06',
-      logo: Assets.images.bank.kb.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/kb.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'KB증권',
       englishName: 'KB_SECURITIES',
       shortName: 'KB증권',
       code: 'S4',
-      logo: Assets.images.bank.kbSecurities.provider()),
+      logo: SvgPicture.asset('assets/images/bank/kb.svg',
+          package: 'korea_banks',width: 100,)),
   Bank(
       koreanName: 'KDB산업은행',
       englishName: 'KDBBANK',
       shortName: '산업',
       code: '02',
-      logo: Assets.images.bank.kdb.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/kdb.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'KTB투자증권',
       englishName: 'DAOL_INVESTMENT_AND_SECURITIES',
       shortName: 'KTB투자증권',
       code: 'SP',
-      logo: Assets.images.bank.daol.provider()),
+      logo: Image.asset(
+        'assets/images/bank/daol.png',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'LIG투자증권',
       englishName: 'LIG_INVESTMENT_AND_SECURITIES',
       shortName: 'LIG투자',
       code: 'SO',
-      logo: Assets.images.bank.lig.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/lig.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'NH농협은행',
       englishName: 'NONGHYEOP',
       shortName: '농협',
       code: '11',
-      logo: Assets.images.bank.nonghyeop.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/nonghyeop.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'NH투자증권',
       englishName: 'NH_INVESTMENT_AND_SECURITIES',
       shortName: 'NH투자증권',
       code: 'SL',
-      logo: Assets.images.bank.nhInvestment.provider()),
+      logo: SvgPicture.asset('assets/images/bank/nonghyeop.svg',
+          package: 'korea_banks',width: 100,)),
   Bank(
       koreanName: 'SC제일은행',
       englishName: 'SC',
       shortName: 'SC제일',
       code: '23',
-      logo: Assets.images.bank.sc.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/sc.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'SH수협은행',
       englishName: 'SUHYEOP',
       shortName: '수협',
       code: '07',
-      logo: Assets.images.bank.sh.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/sh.svg',
+        package: 'korea_banks',width: 100,
+      )),
   Bank(
       koreanName: 'SK증권',
       englishName: 'SK_SECURITIES',
       shortName: 'SK증권',
       code: 'SD',
-      logo: Assets.images.bank.sk.provider()),
+      logo: SvgPicture.asset(
+        'assets/images/bank/sk.svg',
+        package: 'korea_banks',width: 100,
+      )),
 ];

@@ -48,13 +48,14 @@ class _GridBankSelector extends StatelessWidget implements BankSelector {
   final IndexedWidgetBuilder? itemBuilder;
   final List<Bank>? bankList;
   final void Function(Bank bank)? onBankSelected;
+  final EdgeInsets? padding;
 
   const _GridBankSelector(
       {super.key,
       this.gridDelegate,
       this.itemBuilder,
       this.bankList,
-      this.onBankSelected});
+      this.onBankSelected, this.padding});
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +67,7 @@ class _GridBankSelector extends StatelessWidget implements BankSelector {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 mainAxisExtent: 100),
-        itemCount: bankList!.length,
+        itemCount: bankList!.length,padding: padding,
         itemBuilder: itemBuilder ??
             (context, index) {
               final bank = bankList![index];

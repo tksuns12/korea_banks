@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:korea_banks/bank.dart';
 import 'package:korea_banks/korea_banks.dart';
 
 void main() {
